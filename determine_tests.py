@@ -1,3 +1,4 @@
+#IMPORTS
 import pickle  # noqa
 from pydriller import Repository
 import os  # noqa
@@ -8,7 +9,7 @@ from run_tests_CLI.get_all_tests import get_all_tests
 
 MAX_TESTS = 10
 
-
+#FUNCTIONS
 def get_tests(_tests_file, _line):
     tests_file_line = set()
     if 0 <= _line < len(_tests_file):
@@ -161,5 +162,6 @@ def main():
             f.write(test + "\n")
 
 
+#MAIN
 if __name__ == "__main__":
     main()
